@@ -1,0 +1,42 @@
+{% extends "topic/base.html" %}
+{% block title %}论坛主页{% endblock%}
+{% block main %}
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/index.css" media="all">
+<link rel="stylesheet" href="/static/css/new.css" media="all">
+<link rel="stylesheet" href="/static/css/sign_in.css">
+
+<div class="container">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+    <h1>用户资料页面</h1>
+    <div>
+        1
+    </div>
+    <div>
+        {{ user.username }}
+    </div>
+    <div>
+        <div>创建的</div>
+    </div>
+    <div>
+        <div>参与的</div>
+    </div>
+
+    <form method="post" action="" enctype="multipart/form-data">
+        <input type="file" name="avatar">
+        <button type="submit">上传头像</button>
+    </form>
+
+    <img src="https://www.kuaibiancheng.com/uploads/avatar/2018101907-1081t649-3daf-4239-936d-b2d6be975bbd.png" style="max-height: 50%; max-width: 50%; vertical-align: center">
+    </div>
+    <div class="col-md-3"></div>
+</div>
+    <footer class="footer">
+      <div class="container">
+          <div class="col-md-4"></div>
+          <div class="col-md-4"><p class="text-muted">粤ICP备19095164号</p></div>
+          <div class="col-md-4"></div>
+      </div>
+    </footer>
+{% endblock %}
