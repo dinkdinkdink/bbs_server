@@ -46,13 +46,13 @@ cp bbs_server-message-queue.service /etc/systemd/system/bbs_server-message-queue
 
 
 # 初始化
-cd /var/www/web19
+cd /var/www/bbs_server
 python3 reset.py
 
 # 重启服务器
 systemctl daemon-reload
-systemctl restart web19
-systemctl restart web19-message-queue
+systemctl restart bbs_server
+systemctl restart bbs_server-message-queue
 systemctl restart nginx
 
 echo 'succsss'
